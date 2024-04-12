@@ -1,3 +1,7 @@
 Watching for file changes with StatReloader
 C:\Users\Al_20\Desktop\Django\seminars\myproject\myproject\settings.py changed, reloading.
 INFO 2024-04-13 00:03:58,244 autoreload 9356 13052 Watching for file changes with StatReloader
+INFO 2024-04-13 00:52:43,402 autoreload 10504 8016 Watching for file changes with StatReloader
+INFO 2024-04-13 00:53:21,519 autoreload 12020 1964 Watching for file changes with StatReloader
+INFO 2024-04-13 01:01:25,453 autoreload 12612 11588 Watching for file changes with StatReloader
+INFO 2024-04-13 01:30:28,005 autoreload 1640 11612 Watching for file changes with StatReloader
