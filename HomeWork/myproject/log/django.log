@@ -81,3 +81,275 @@ INFO 2024-04-16 23:58:25,236 basehttp 13796 2104 "GET /homework3/ HTTP/1.1" 200 
 INFO 2024-04-17 00:10:12,331 autoreload 17796 14776 Watching for file changes with StatReloader
 WARNING 2024-04-17 00:10:16,832 log 17796 17192 Not Found: /
 WARNING 2024-04-17 00:10:16,834 basehttp 17796 17192 "GET / HTTP/1.1" 404 2172
+WARNING 2024-04-17 00:13:44,187 log 17796 17192 Not Found: /index
+WARNING 2024-04-17 00:13:44,188 basehttp 17796 17192 "GET /index HTTP/1.1" 404 2205
+INFO 2024-04-17 00:14:30,461 basehttp 17796 17192 "GET /homework3/ HTTP/1.1" 200 242
+WARNING 2024-04-17 00:34:17,512 log 17796 15724 Not Found: /favicon.ico
+WARNING 2024-04-17 00:34:17,531 basehttp 17796 15724 "GET /favicon.ico HTTP/1.1" 404 2223
+INFO 2024-04-17 11:33:47,971 autoreload 3708 12948 Watching for file changes with StatReloader
+WARNING 2024-04-17 11:34:01,068 log 3708 17004 Not Found: /
+WARNING 2024-04-17 11:34:01,069 basehttp 3708 17004 "GET / HTTP/1.1" 404 2172
+WARNING 2024-04-17 11:34:01,691 log 3708 17004 Not Found: /favicon.ico
+WARNING 2024-04-17 11:34:01,692 basehttp 3708 17004 "GET /favicon.ico HTTP/1.1" 404 2223
+INFO 2024-04-17 11:34:10,276 basehttp 3708 4932 "GET /homework3/ HTTP/1.1" 200 293
+WARNING 2024-04-17 11:43:18,731 log 3708 10928 Not Found: /user/1
+WARNING 2024-04-17 11:43:18,732 basehttp 3708 10928 "GET /user/1 HTTP/1.1" 404 2208
+INFO 2024-04-17 11:46:43,386 basehttp 3708 16764 "GET /homework3/ HTTP/1.1" 200 293
+INFO 2024-04-17 11:46:56,117 basehttp 3708 16764 "GET /homework3/user/2 HTTP/1.1" 301 0
+ERROR 2024-04-17 11:46:57,089 log 3708 13936 Internal Server Error: /homework3/user/2/
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: myapp2_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp2\views.py", line 12, in basket
+    user = User.objects.filter(pk=user_id).first()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1097, in first
+    for obj in queryset[:1]:
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: myapp2_user
+ERROR 2024-04-17 11:46:57,102 basehttp 3708 13936 "GET /homework3/user/2/ HTTP/1.1" 500 139372
+WARNING 2024-04-17 11:47:47,600 log 3708 13936 Not Found: /homework3/user_sorted/
+WARNING 2024-04-17 11:47:47,601 basehttp 3708 13936 "GET /homework3/user_sorted/ HTTP/1.1" 404 2923
+INFO 2024-04-17 11:48:19,019 basehttp 3708 13936 "GET /homework3/user/1 HTTP/1.1" 301 0
+ERROR 2024-04-17 11:48:19,111 log 3708 18088 Internal Server Error: /homework3/user/1/
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: myapp2_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp2\views.py", line 12, in basket
+    user = User.objects.filter(pk=user_id).first()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1097, in first
+    for obj in queryset[:1]:
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: myapp2_user
+ERROR 2024-04-17 11:48:19,121 basehttp 3708 18088 "GET /homework3/user/1/ HTTP/1.1" 500 139372
+WARNING 2024-04-17 17:10:41,456 log 3708 18220 Not Found: /index
+WARNING 2024-04-17 17:10:41,460 basehttp 3708 18220 "GET /index HTTP/1.1" 404 2205
+WARNING 2024-04-17 17:10:50,297 log 3708 18220 Not Found: /indexghjghj
+WARNING 2024-04-17 17:10:50,298 basehttp 3708 18220 "GET /indexghjghj HTTP/1.1" 404 2223
+INFO 2024-04-17 17:14:18,918 basehttp 3708 18220 "GET /homework3/ HTTP/1.1" 200 293
+INFO 2024-04-17 17:14:39,347 basehttp 3708 18220 "GET /homework3/index/ HTTP/1.1" 200 293
+WARNING 2024-04-17 17:16:08,930 log 3708 18220 Not Found: /homework3/user_all_orders
+WARNING 2024-04-17 17:16:08,932 basehttp 3708 18220 "GET /homework3/user_all_orders HTTP/1.1" 404 2932
+WARNING 2024-04-17 17:16:37,718 log 3708 18220 Not Found: /homework3/user
+WARNING 2024-04-17 17:16:37,720 basehttp 3708 18220 "GET /homework3/user HTTP/1.1" 404 2899
+WARNING 2024-04-17 17:16:43,356 log 3708 18220 Not Found: /homework3/user/
+WARNING 2024-04-17 17:16:43,357 basehttp 3708 18220 "GET /homework3/user/ HTTP/1.1" 404 2902
+WARNING 2024-04-17 17:16:59,223 log 3708 18220 Not Found: /homework3/user_sorted/
+WARNING 2024-04-17 17:16:59,224 basehttp 3708 18220 "GET /homework3/user_sorted/ HTTP/1.1" 404 2923
+INFO 2024-04-17 17:21:59,163 autoreload 3708 12948 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-17 17:22:04,870 autoreload 9132 13824 Watching for file changes with StatReloader
+INFO 2024-04-17 17:22:31,898 autoreload 9132 13824 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-17 17:22:33,210 autoreload 8988 11376 Watching for file changes with StatReloader
+INFO 2024-04-17 17:48:23,128 autoreload 8696 16816 Watching for file changes with StatReloader
+WARNING 2024-04-17 17:48:28,831 log 8696 8168 Not Found: /
+WARNING 2024-04-17 17:48:28,832 basehttp 8696 8168 "GET / HTTP/1.1" 404 2172
+WARNING 2024-04-17 17:48:35,792 log 8696 8168 Not Found: /h/
+WARNING 2024-04-17 17:48:35,793 basehttp 8696 8168 "GET /h/ HTTP/1.1" 404 2196
+INFO 2024-04-17 17:48:45,247 basehttp 8696 8168 "GET /homework3/ HTTP/1.1" 200 293
+INFO 2024-04-17 17:48:54,360 basehttp 8696 8168 "GET /homework3/user/1 HTTP/1.1" 301 0
+ERROR 2024-04-17 17:48:54,644 log 8696 15068 Internal Server Error: /homework3/user/1/
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: myapp2_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp2\views.py", line 12, in basket
+    user = User.objects.filter(pk=user_id).first()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1097, in first
+    for obj in queryset[:1]:
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: myapp2_user
+ERROR 2024-04-17 17:48:54,655 basehttp 8696 15068 "GET /homework3/user/1/ HTTP/1.1" 500 139455
+INFO 2024-04-17 17:49:14,224 basehttp 8696 15068 "GET /homework3/ HTTP/1.1" 200 293
+INFO 2024-04-17 17:49:21,843 basehttp 8696 15068 "GET /homework3/index/ HTTP/1.1" 200 293
+WARNING 2024-04-17 17:49:50,459 log 8696 15068 Not Found: /homework3/user/
+WARNING 2024-04-17 17:49:50,460 basehttp 8696 15068 "GET /homework3/user/ HTTP/1.1" 404 2902
+WARNING 2024-04-17 17:50:07,880 log 8696 15068 Not Found: /homework3/user_sorted/
+WARNING 2024-04-17 17:50:07,882 basehttp 8696 15068 "GET /homework3/user_sorted/ HTTP/1.1" 404 2923
+INFO 2024-04-17 17:50:29,030 basehttp 8696 15068 "GET /homework3/user_sorted/1/7 HTTP/1.1" 301 0
+ERROR 2024-04-17 17:50:29,127 log 8696 15752 Internal Server Error: /homework3/user_sorted/1/7/
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: myapp2_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp2\views.py", line 25, in sorted_basket
+    user = User.objects.filter(pk=user_id).first()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1097, in first
+    for obj in queryset[:1]:
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: myapp2_user
+ERROR 2024-04-17 17:50:29,142 basehttp 8696 15752 "GET /homework3/user_sorted/1/7/ HTTP/1.1" 500 140324
+INFO 2024-04-17 18:02:30,789 autoreload 8376 7836 Watching for file changes with StatReloader
+INFO 2024-04-17 18:05:04,418 autoreload 8420 15772 Watching for file changes with StatReloader
+WARNING 2024-04-17 18:05:06,645 log 8420 13020 Not Found: /
+WARNING 2024-04-17 18:05:06,646 basehttp 8420 13020 "GET / HTTP/1.1" 404 2172
+INFO 2024-04-17 18:05:14,068 basehttp 8420 13020 "GET /homework3/ HTTP/1.1" 200 293
+WARNING 2024-04-17 18:05:27,783 log 8420 13020 Not Found: /homework3/user/
+WARNING 2024-04-17 18:05:27,784 basehttp 8420 13020 "GET /homework3/user/ HTTP/1.1" 404 2902
+ERROR 2024-04-17 18:05:39,125 log 8420 13020 Internal Server Error: /homework3/user/1/
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: myapp2_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp2\views.py", line 12, in basket
+    user = User.objects.filter(pk=user_id).first()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1097, in first
+    for obj in queryset[:1]:
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: myapp2_user
+ERROR 2024-04-17 18:05:39,136 basehttp 8420 13020 "GET /homework3/user/1/ HTTP/1.1" 500 139455
