@@ -353,3 +353,164 @@ Traceback (most recent call last):
     return super().execute(query, params)
 django.db.utils.OperationalError: no such table: myapp2_user
 ERROR 2024-04-17 18:05:39,136 basehttp 8420 13020 "GET /homework3/user/1/ HTTP/1.1" 500 139455
+INFO 2024-05-01 18:16:13,052 autoreload 15736 11884 Watching for file changes with StatReloader
+INFO 2024-05-01 18:28:24,388 autoreload 15772 11596 Watching for file changes with StatReloader
+INFO 2024-05-01 18:55:47,270 autoreload 11880 10136 Watching for file changes with StatReloader
+ERROR 2024-05-01 18:55:52,587 log 11880 15356 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py", line 8, in index
+    return render(request, 'myapp4/index.html')
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-05-01 18:55:52,615 basehttp 11880 15356 "GET / HTTP/1.1" 500 153703
+WARNING 2024-05-01 18:55:56,255 log 11880 15356 Not Found: /favicon.ico
+WARNING 2024-05-01 18:55:56,257 basehttp 11880 15356 "GET /favicon.ico HTTP/1.1" 404 2471
+ERROR 2024-05-01 18:56:59,253 log 11880 15356 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py", line 8, in index
+    return render(request, 'myapp4/index.html')
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-05-01 18:56:59,262 basehttp 11880 15356 "GET / HTTP/1.1" 500 153840
+INFO 2024-05-01 18:58:01,053 autoreload 8552 12332 Watching for file changes with StatReloader
+INFO 2024-05-01 18:58:04,029 basehttp 8552 15716 "GET / HTTP/1.1" 200 608
+INFO 2024-05-01 19:00:39,479 basehttp 8552 15716 "GET /client/1 HTTP/1.1" 301 0
+ERROR 2024-05-01 19:00:39,562 log 8552 13432 Internal Server Error: /client/1/
+Traceback (most recent call last):
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py", line 12, in client_order
+    client = Client.objects.get(pk=client_id)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Al_20\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp4.models.Client.DoesNotExist: Client matching query does not exist.
+ERROR 2024-05-01 19:00:39,566 basehttp 8552 13432 "GET /client/1/ HTTP/1.1" 500 81736
+INFO 2024-05-01 19:00:47,919 basehttp 8552 13432 "GET / HTTP/1.1" 200 627
+WARNING 2024-05-01 19:00:55,679 log 8552 13432 Not Found: /docs
+WARNING 2024-05-01 19:00:55,680 basehttp 8552 13432 "GET /docs HTTP/1.1" 404 2450
+WARNING 2024-05-01 19:01:14,745 log 8552 13432 Not Found: /client_order
+WARNING 2024-05-01 19:01:14,746 basehttp 8552 13432 "GET /client_order HTTP/1.1" 404 2474
+WARNING 2024-05-01 19:13:35,177 log 8552 15384 Not Found: /myapp4
+WARNING 2024-05-01 19:13:35,178 basehttp 8552 15384 "GET /myapp4 HTTP/1.1" 404 2456
+INFO 2024-05-01 19:20:11,485 autoreload 8552 12332 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\forms.py changed, reloading.
+INFO 2024-05-01 19:20:12,813 autoreload 12296 6676 Watching for file changes with StatReloader
+WARNING 2024-05-01 19:20:24,369 log 12296 11164 Not Found: /myapp4
+WARNING 2024-05-01 19:20:24,370 basehttp 12296 11164 "GET /myapp4 HTTP/1.1" 404 2456
+INFO 2024-05-01 19:25:28,628 autoreload 13092 5428 Watching for file changes with StatReloader
+INFO 2024-05-01 19:25:30,509 basehttp 13092 10800 "GET / HTTP/1.1" 200 627
+WARNING 2024-05-01 19:25:39,872 log 13092 10800 Not Found: /myapp4/client_order.html
+WARNING 2024-05-01 19:25:39,874 basehttp 13092 10800 "GET /myapp4/client_order.html HTTP/1.1" 404 2510
+WARNING 2024-05-01 19:25:52,441 log 13092 10800 Not Found: /myapp4/client_order
+WARNING 2024-05-01 19:25:52,442 basehttp 13092 10800 "GET /myapp4/client_order HTTP/1.1" 404 2495
+INFO 2024-05-01 19:26:37,322 autoreload 13092 5428 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
+INFO 2024-05-01 19:26:38,258 autoreload 11812 13284 Watching for file changes with StatReloader
+INFO 2024-05-01 19:29:32,541 autoreload 11812 13284 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
+INFO 2024-05-01 19:29:33,652 autoreload 16120 14256 Watching for file changes with StatReloader
+INFO 2024-05-01 19:40:04,170 autoreload 16120 14256 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\forms.py changed, reloading.
+INFO 2024-05-01 19:40:05,328 autoreload 14560 14784 Watching for file changes with StatReloader
+INFO 2024-05-01 19:49:18,692 autoreload 14560 14784 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
+INFO 2024-05-01 19:49:19,959 autoreload 14272 14944 Watching for file changes with StatReloader
+INFO 2024-05-01 19:49:30,627 autoreload 14272 14944 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
+INFO 2024-05-01 19:49:31,442 autoreload 12908 15444 Watching for file changes with StatReloader
+INFO 2024-05-01 19:49:39,410 autoreload 12908 15444 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
+INFO 2024-05-01 19:49:40,162 autoreload 16104 10716 Watching for file changes with StatReloader
+INFO 2024-05-01 19:49:52,443 autoreload 16104 10716 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
+INFO 2024-05-01 19:49:53,225 autoreload 10616 8988 Watching for file changes with StatReloader
+INFO 2024-05-01 19:50:15,588 autoreload 10616 8988 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
+INFO 2024-05-01 19:50:16,315 autoreload 9040 11208 Watching for file changes with StatReloader
+INFO 2024-05-01 19:50:27,690 autoreload 9040 11208 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
+INFO 2024-05-01 19:50:28,491 autoreload 15304 13004 Watching for file changes with StatReloader
+INFO 2024-05-01 19:50:50,752 autoreload 15304 13004 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
+INFO 2024-05-01 19:50:51,462 autoreload 12404 13944 Watching for file changes with StatReloader
+INFO 2024-05-01 19:53:18,279 autoreload 1312 9644 Watching for file changes with StatReloader
+INFO 2024-05-01 19:57:35,332 autoreload 3580 15320 Watching for file changes with StatReloader
+INFO 2024-05-01 20:03:53,256 autoreload 14768 9684 Watching for file changes with StatReloader
+INFO 2024-05-01 20:06:14,346 autoreload 14768 9684 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
+INFO 2024-05-01 20:06:15,246 autoreload 11872 9016 Watching for file changes with StatReloader
+INFO 2024-05-01 20:06:18,926 basehttp 11872 8104 "GET / HTTP/1.1" 200 627
+INFO 2024-05-01 20:07:51,161 autoreload 11872 9016 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
+INFO 2024-05-01 20:07:52,017 autoreload 15568 15524 Watching for file changes with StatReloader
