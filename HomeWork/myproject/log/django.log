@@ -514,3 +514,55 @@ INFO 2024-05-01 20:06:15,246 autoreload 11872 9016 Watching for file changes wit
 INFO 2024-05-01 20:06:18,926 basehttp 11872 8104 "GET / HTTP/1.1" 200 627
 INFO 2024-05-01 20:07:51,161 autoreload 11872 9016 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myapp4\views.py changed, reloading.
 INFO 2024-05-01 20:07:52,017 autoreload 15568 15524 Watching for file changes with StatReloader
+INFO 2024-05-07 21:35:09,019 autoreload 13884 11048 Watching for file changes with StatReloader
+INFO 2024-05-10 18:37:56,968 autoreload 8232 6564 Watching for file changes with StatReloader
+INFO 2024-05-10 18:38:38,996 autoreload 6228 2040 Watching for file changes with StatReloader
+INFO 2024-05-10 18:38:57,515 autoreload 9656 15048 Watching for file changes with StatReloader
+INFO 2024-05-10 18:39:43,453 autoreload 14824 15184 Watching for file changes with StatReloader
+INFO 2024-05-10 18:40:54,949 autoreload 14824 15184 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myproject\urls.py changed, reloading.
+INFO 2024-05-10 18:41:02,485 autoreload 12220 13900 Watching for file changes with StatReloader
+INFO 2024-05-10 18:48:29,027 autoreload 10476 16344 Watching for file changes with StatReloader
+INFO 2024-05-10 18:53:10,173 autoreload 10476 16344 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myproject\settings.py changed, reloading.
+INFO 2024-05-10 18:53:11,695 autoreload 15756 15712 Watching for file changes with StatReloader
+INFO 2024-05-10 18:53:29,766 autoreload 15756 15712 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myproject\settings.py changed, reloading.
+INFO 2024-05-10 18:53:30,915 autoreload 15504 14136 Watching for file changes with StatReloader
+INFO 2024-05-10 18:53:45,956 basehttp 15504 15940 "GET / HTTP/1.1" 200 9637
+INFO 2024-05-10 18:53:46,524 basehttp 15504 14284 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-05-10 18:53:46,642 basehttp 15504 5540 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+INFO 2024-05-10 18:53:46,643 basehttp 15504 15940 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2024-05-10 18:53:46,782 basehttp 15504 5540 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2024-05-10 18:53:47,284 log 15504 5540 Not Found: /favicon.ico
+WARNING 2024-05-10 18:53:47,285 basehttp 15504 5540 "GET /favicon.ico HTTP/1.1" 404 11574
+INFO 2024-05-10 18:55:57,361 basehttp 15504 5540 "GET / HTTP/1.1" 200 9379
+INFO 2024-05-10 18:56:10,311 basehttp 15504 5540 "GET /__debug__render_panel/?store_id=d992bb8cbb8e4f92894a72043ccb7572&panel_id=HistoryPanel HTTP/1.1" 200 5383
+INFO 2024-05-10 18:56:10,498 basehttp 15504 5540 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+INFO 2024-05-10 18:56:25,853 basehttp 15504 5540 "GET /__debug__render_panel/?store_id=d992bb8cbb8e4f92894a72043ccb7572&panel_id=VersionsPanel HTTP/1.1" 200 621
+INFO 2024-05-10 18:56:44,111 basehttp 15504 5540 "GET /__debug__render_panel/?store_id=d992bb8cbb8e4f92894a72043ccb7572&panel_id=SettingsPanel HTTP/1.1" 200 26655
+INFO 2024-05-10 18:56:53,630 basehttp 15504 5540 "GET /__debug__render_panel/?store_id=d992bb8cbb8e4f92894a72043ccb7572&panel_id=HeadersPanel HTTP/1.1" 200 4315
+INFO 2024-05-10 18:58:34,688 basehttp 15504 5540 "GET /__debug__render_panel/?store_id=d992bb8cbb8e4f92894a72043ccb7572&panel_id=SQLPanel HTTP/1.1" 200 115
+INFO 2024-05-10 18:59:00,862 basehttp 15504 5540 "GET /__debug__render_panel/?store_id=d992bb8cbb8e4f92894a72043ccb7572&panel_id=StaticFilesPanel HTTP/1.1" 200 35145
+INFO 2024-05-10 18:59:24,998 basehttp 15504 5540 "GET /__debug__render_panel/?store_id=d992bb8cbb8e4f92894a72043ccb7572&panel_id=TemplatesPanel HTTP/1.1" 200 6136
+INFO 2024-05-10 18:59:44,959 basehttp 15504 5540 "GET /__debug__render_panel/?store_id=d992bb8cbb8e4f92894a72043ccb7572&panel_id=CachePanel HTTP/1.1" 200 1413
+INFO 2024-05-10 18:59:47,725 basehttp 15504 5540 "GET /__debug__render_panel/?store_id=d992bb8cbb8e4f92894a72043ccb7572&panel_id=SignalsPanel HTTP/1.1" 200 2152
+INFO 2024-05-10 19:37:57,405 autoreload 15504 14136 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myproject\settings.py changed, reloading.
+INFO 2024-05-10 19:37:59,130 autoreload 5280 15284 Watching for file changes with StatReloader
+INFO 2024-05-10 19:38:59,221 autoreload 5280 15284 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myproject\settings.py changed, reloading.
+INFO 2024-05-10 19:39:00,554 autoreload 3348 9928 Watching for file changes with StatReloader
+INFO 2024-05-10 19:42:06,307 basehttp 3348 7200 "GET / HTTP/1.1" 200 9379
+INFO 2024-05-10 19:42:06,388 basehttp 3348 7200 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-05-10 19:42:06,390 basehttp 3348 11860 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-05-10 19:42:06,478 basehttp 3348 11860 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-05-10 19:42:06,480 basehttp 3348 7200 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-05-10 20:26:30,562 autoreload 16208 6092 Watching for file changes with StatReloader
+INFO 2024-05-10 20:29:16,362 autoreload 2328 15532 Watching for file changes with StatReloader
+INFO 2024-05-10 20:29:56,941 autoreload 15176 6996 Watching for file changes with StatReloader
+INFO 2024-05-10 20:30:01,642 basehttp 15176 14692 "GET / HTTP/1.1" 200 9379
+INFO 2024-05-10 20:30:01,747 basehttp 15176 14692 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2024-05-10 20:30:01,771 basehttp 15176 13064 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+INFO 2024-05-10 20:30:01,904 basehttp 15176 13064 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-05-10 20:30:01,957 basehttp 15176 13064 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2024-05-10 20:38:56,878 autoreload 15176 6996 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myproject\settings.py changed, reloading.
+INFO 2024-05-10 20:39:03,248 autoreload 8936 528 Watching for file changes with StatReloader
+INFO 2024-05-10 20:39:54,369 autoreload 8936 528 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myproject\settings.py changed, reloading.
+INFO 2024-05-10 20:39:55,357 autoreload 16052 15332 Watching for file changes with StatReloader
+INFO 2024-05-10 20:40:43,734 autoreload 16052 15332 C:\Users\Al_20\Desktop\Django\HomeWork\myproject\myproject\settings.py changed, reloading.
